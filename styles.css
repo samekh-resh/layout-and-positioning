@@ -1,0 +1,41 @@
+
+
+section, p{
+    width: fit-content;
+    border: 1px solid black;
+}
+
+section{
+    /* this centers the block element verticall and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* i played around with taking out the transform and it made it look so weird. it's definitely needed */
+
+}
+
+h1, .for-display{
+    /* centers horizontally but not vertically 
+    it needs to have a specified width to it*/
+    margin: auto;
+}
+
+h1{
+    width: 500px;
+}
+
+/* this needs to be applied to the container box */
+.containing-box{
+    display: flex;
+  justify-content: center;  /* horizontal */
+  align-items: center;      /* vertical */
+}
+
+
+
+/* .for-flex{
+    display: flex;
+         justify-content: center;
+         align-items: center;
+} */
